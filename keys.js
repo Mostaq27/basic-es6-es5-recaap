@@ -34,5 +34,8 @@ const {isCleaned, ...shortGlass} = glass
 
 // freeze
 // Object.freeze(glass);
+Object.seal(glass);
     glass.source = 'Bangladesh'
+    glass.price = 5000;
+    delete glass.name;
     console.log(glass)
